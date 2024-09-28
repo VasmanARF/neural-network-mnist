@@ -1,0 +1,186 @@
+Skip to content
+Navigation Menu
+VasmanARF
+/
+neural-network-mnist
+
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Editing README in neural-network-mnist
+Breadcrumbsneural-network-mnist
+/
+README
+in
+main
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+4
+Line wrap mode
+
+No wrap
+Editing README file contents
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+# Simple Neural Network for MNIST Classification
+
+This repository contains a simple implementation of a neural network built from scratch to classify handwritten digits from the MNIST dataset. The network is designed using NumPy and includes functionality for training, accuracy evaluation, and interactive testing.
+
+## Characteristics
+
+- A fully connected neural network with one hidden layer.
+- Uses the MNIST dataset for training and testing.
+- Includes forward propagation and backpropagation steps for training.
+- Adjustable hyperparameters like learning rate and the number of epochs.
+- Interactive mode for predicting individual digits from the dataset.
+
+## Installation
+
+### Prerequisites
+
+- Python 3.x
+- NumPy
+- Matplotlib
+
+### Setup
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/VasmanARF/neural-network-mnist
+    cd neural-network-mnist
+    ```
+
+2. Install the required dependencies:
+
+    ```bash
+    pip install numpy matplotlib
+    ```
+
+3. Download and add the MNIST dataset (`mnist.npz`) into the `DataSet` folder of this repository. If you don't have the file, you can download it from [here](https://s3.amazonaws.com/img-datasets/mnist.npz).
+
+## Usage
+
+### Training the Model
+
+1. Run the Python script to train the neural network on the MNIST dataset:
+
+    ```bash
+    python neuralNetwork.py
+    ```
+
+2. The model will train for the specified number of epochs, and after each epoch, it will print the current accuracy of the model.
+
+### Testing the Model
+
+After training, you can use the interactive mode to predict individual digits from the dataset. 
+1. When prompted, enter the index of an image (from 0 to 59999) for the model to predict:
+
+    ```bash
+    Enter an index from the dataSet to predict, 0-59999: 
+    ```
+
+2. The program will display the image and its predicted digit.
+
+## Customization
+
+You can easily customize the neural network by modifying the following parameters:
+
+- **Learning Rate**: Change the `learn_rate` variable to adjust how fast the model learns.
+- **Number of Epochs**: Modify the `epochs` variable to set the number of training iterations.
+- **Hidden Layer Size**: Adjust the size of the hidden layer by changing the dimensions of `weights_input_hidden` and `bias_hidden`.
+
+Example in `neuralNetwork.py`:
+
+```python
+# Hyperparameters
+learn_rate = 0.01  # Learning rate
+epochs = 5  # Number of epochs
+
